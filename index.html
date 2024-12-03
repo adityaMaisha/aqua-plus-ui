@@ -14,9 +14,9 @@
     <style>
         
         @font-face {
-        src: url('font/ITCAvantGardeStd-Bk.ttf') format('truetype')
-                url('font/ITCAvantGardeStd-Bk.woff2') format('woff2'),
-                url('font/ITCAvantGardeStd-Bk.woff') format('woff');
+        src: url('assets/fonts/ITCAvantGardeStd-Bk.ttf') format('truetype')
+                url('assets/fonts/ITCAvantGardeStd-Bk.woff2') format('woff2'),
+                url('assets/fonts/ITCAvantGardeStd-Bk.woff') format('woff');
                 font-weight: normal;
                 font-style: normal;
                 font-family: 'Avanta';
@@ -49,8 +49,9 @@
          }
          .nav-container{
             display: flex;
-            justify-content: space-evenly;
-            width: 95%;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
             font-family: "Barlow Semi Condensed", sans-serif;
             margin-top: 40px;
          }
@@ -62,7 +63,8 @@
             display: flex;
             align-items: center;
              width: 60%;
-            justify-content: space-evenly;
+            justify-content: space-around;
+            margin-bottom: 0;
          }
          li{
             list-style: none;
@@ -113,7 +115,7 @@
          .hero-section-container{
             height: 100vh;
             width: auto;
-            background-image: url(background.jpg);
+            background-image: url(assets/images/background.png);
 
 
          }
@@ -442,6 +444,24 @@
         .footer p{
             color: black;
         }
+        .nav-links li{
+            position: relative;
+        }
+
+        .nav-links li a:before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0.5px;
+            background: #fff;
+            transition: .3s;
+        }
+
+        .nav-links li a:hover::before{
+            width: 100%;
+        }
         
     </style>
 </head>
@@ -455,14 +475,14 @@
         <nav class="navbar">
           <div class="nav-container">
             <div class="logo">
-                <img src="./logo.png"/>
+                <img src="assets/images/logo.png"/>
             </div>
     
             <ul class="nav-links">
                 <li><a href="#aquaplusWay">AQUAPLUS WAY</a></li>
                 <li> <a href="#whyAlkaline">WHY ALKALINE</a> </li>
                 <li> <a href="#products">PRODUCTS </a></li>
-                <li> <a href="#orderNow">Order Now</a></li>
+                <li> <a href="#orderNow">ORDER NOW</a></li>
                 <li><a href="#blog">BLOG</a></li>
                 <li><a href="contactUs">CONTACT US</a></li>
             </ul>
@@ -500,16 +520,16 @@
                     <div class="rate">
                         <div class="star">4.8/5</div>
                         <div class="photos">
-                            <image src="customer1.png" class="customer" />
-                            <image src="customer2.jpg" class="customer" />
-                            <image src="customer3.jpg" class="customer" />
+                            <image src="assets/images/customer1.png" class="customer" />
+                            <image src="assets/images/customer2.jpg" class="customer" />
+                            <image src="assets/images/customer3.jpg" class="customer" />
                             <button >...</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="second-div">
-                <img src="./aqua-bottle.png" alt="loading...."/>
+                <img src="assets/images/aqua-bottle.png" alt="loading...."/>
             </div>
             <div class="third-div">
                 <div class="bpa-para">
@@ -554,16 +574,16 @@
                 </div>
             </div> 
             <div class="tilte-bottle">
-                <img src="aqua-bottle.png" alt="loading"/>
+                <img src="assets/images/aqua-bottle.png" alt="loading"/>
             </div>
           </div>
           <div class="banner">
             <div class="banner-images">
-                <img src="banner-img1.png" alt="loadding" />
-                <img  src="banner-img2.png" alt="loading"/>
-                <img src="banner-img3.png"  alt="loading" />
-                <img src="banner-img4.png" alt="loading" />
-                <img src="banner-img5.png" alt="loading" />
+                <img src="assets/images/banner-img1.png" alt="loadding" />
+                <img  src="assets/images/banner-img2.png" alt="loading"/>
+                <img src="assets/images/banner-img3.png"  alt="loading" />
+                <img src="assets/images/banner-img4.png" alt="loading" />
+                <img src="assets/images/banner-img5.png" alt="loading" />
             </div>
           </div>
         </div>
@@ -571,8 +591,8 @@
           <!-- why Alkaline section start -->
        <div class="whyAlkalineSection row w-100 p-5">
         <div class="col-4 d-flex flex-column align-items-center justify-content-center">
-            <img class="whyAlkalineImg" src="aqua-bottle.png" alt="Loading" />
-            <img class="phScale pt-3" src="alkalinepng.png" alt="Loading" />
+            <img class="whyAlkalineImg" src="assets/images/aqua-bottle.png" alt="Loading" />
+            <img class="phScale pt-3" src="assets/images/alkalinepng.png" alt="Loading" />
         </div>
         <div class="col-8 p-3">
          <h2>WHY ALKALINE</h2>
@@ -601,7 +621,7 @@
        <!-- video section start -->
         <div class="video-section">
             <div class="video">
-               <video src="./video.mp4" autoplay muted loop></video>
+               <video src="assets/images/video.mp4" autoplay muted loop></video>
             </div>
             <div class="video-content">
                 <div class="video-written-content">
@@ -613,7 +633,7 @@
                     </p>
                 </div>
                 <div class="video-bottle">
-                    <img src="aqua-bottle.png" alt="loading"/>
+                    <img src="assets/images/aqua-bottle.png" alt="loading"/>
                 </div>
                 <button class="video-button">ORDER NOW </button>
             </div>
@@ -820,7 +840,7 @@
                             Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo sed aenean amet lacus.Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo.
                         </p>
                       <div class="testimonial-img">
-                        <img src="client1.png" alt="loading" />
+                        <img src="assets/images/client1.png" alt="loading" />
                         <span>SUZANA</span>
                       </div>
                     </div>
@@ -832,7 +852,7 @@
                             Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo sed aenean amet lacus.Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo.
                         </p>
                       <div class="testimonial-img">
-                        <img src="customer3.jpg" alt="loading" />
+                        <img src="assets/images/customer3.jpg" alt="loading" />
                         <span>LÍVIA</span>
                       </div>
                     </div>
@@ -844,7 +864,7 @@
                             Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo sed aenean amet lacus.Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo.
                         </p>
                       <div class="testimonial-img">
-                        <img src="client1.png" alt="loading" />
+                        <img src="assets/images/client1.png" alt="loading" />
                         <span>KÁTIA</span>
                       </div>
                     </div>
@@ -856,7 +876,7 @@
                             Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo sed aenean amet lacus.Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo.
                         </p>
                       <div class="testimonial-img">
-                        <img src="customer1.png" alt="loading" />
+                        <img src="assets/images/customer1.png" alt="loading" />
                         <span>MATHEUS</span>
                       </div>
                     </div>
@@ -868,7 +888,7 @@
                             Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo sed aenean amet lacus.Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo.
                         </p>
                       <div class="testimonial-img">
-                        <img src="customer2.jpg" alt="loading" />
+                        <img src="assets/images/customer2.jpg" alt="loading" />
                         <span>MATHEUS</span>
                       </div>
                     </div>

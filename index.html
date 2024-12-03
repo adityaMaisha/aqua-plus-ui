@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua plus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        
+        @font-face {
+        src: url('font/ITCAvantGardeStd-Bk.ttf') format('truetype')
+                url('font/ITCAvantGardeStd-Bk.woff2') format('woff2'),
+                url('font/ITCAvantGardeStd-Bk.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+                font-family: 'Avanta';
+   }
+   
+        body{
+            
+
+            background-color: #01295d;
+            font-family: 'Avanta';
+         }
+         *{
+            margin: 0px;
+            padding: 0px;
+            color: #FDFDFD;
+            box-sizing: border-box;
+         }
+         h1{
+            font-family: 'Avanta';
+         }
+         .navbar{
+            display: flex;
+            
+             align-items: center;
+             justify-content: center;
+             margin-bottom: 20px
+         }
+         .bpa-para{
+            padding-top: 35px;
+         }
+         .nav-container{
+            display: flex;
+            justify-content: space-evenly;
+            width: 95%;
+            font-family: "Barlow Semi Condensed", sans-serif;
+            margin-top: 40px;
+         }
+         .logo img{
+            width: 200px;
+            height: 88.44px;
+         }
+         .nav-links{
+            display: flex;
+            align-items: center;
+             width: 60%;
+            justify-content: space-evenly;
+         }
+         li{
+            list-style: none;
+            color: black;
+            font-size: 20px;
+            
+         }
+         li a{
+            color:#FDFDFD;
+            text-decoration:none ;
+         }
+         ul{
+            list-style-type: none ;
+            color: black;
+         }
+         .right-nav{
+            display: flex;
+            width: 10%;
+            justify-content: space-around;
+            align-items: center;
+         }
+         .iam h1{
+            font-size: 122px;
+            white-space: nowrap;
+            font-family:'Avanta'
+            
+         }
+         .third-div{
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-around;
+    
+         }
+         .third-div h1{
+            font-size: 122px;
+            white-space: nowrap;
+            font-family: 'Avanta';
+         }
+         .hero-section{
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+           
+            
+          
+         }
+         .hero-section-container{
+            height: 100vh;
+            width: auto;
+            background-image: url(background.jpg);
+
+
+         }
+         .main-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            padding:0px 50px;
+            align-items: center;
+            position: relative;
+           
+         }
+         .second-div img{
+              
+             height: auto;
+             width: 293px;
+
+         }
+         .second-div{
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+         }
+         
+         .first-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+          z-index: 1;
+         }
+         .bpa-first {
+         font-size: 18px;
+         line-height: 21px;
+         width: 95%;
+        padding: 10px 6px 10px 48px;
+}      
+        .content{
+            font-size: 15px;
+              width: 155px;
+}
+         .rate{
+            padding-top: 5px;
+             display: flex;
+              align-items: center;
+         }
+         .photos{
+            padding-left: 10px;
+            display: flex;
+         }
+         .customer{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+         }
+         .photos button{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 26px;
+            display: flex;
+            align-items: self-start;
+            justify-content: center;
+            background: #0000004f;
+                }
+         .order{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+         }
+         .order-btn{
+            position: relative;
+            background: transparent;
+            width: 90%;
+            height: 40px;
+            background-color: #00000017;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            cursor: pointer;
+            
+         }
+        
+           
+         .about{
+           
+            background-color: #01295d;
+            display: flex;
+            flex-direction: column;
+           
+            height: 100%;
+            width: auto;
+           
+         }
+
+         .about-container{
+            display: flex;
+            justify-content: space-around;
+            height: 75%;
+            padding: 50px 50px 20px 50px;
+         }
+         .about h1{
+            font-size: 50px;
+         } 
+         
+
+
+         .para{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            height: 85%;
+            padding-top: 20px;
+            font-size: 17px;
+         }
+       
+
+         .about-content{
+            
+            width: 60%;
+         }
+         .tilte-bottle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+             transform: rotate(-17deg);
+         }
+         .tilte-bottle img{
+            height: 450px;
+         }
+         .banner-images img{
+            height: 130px;
+            display: flex;
+           
+            width: 130px;
+            align-items: center;
+            justify-content: space-evenly;
+         }
+         .banner-images{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 80%;
+         }
+         .banner{
+            background-color: #F2F2F2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            
+         }
+         .video-section{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+         } 
+         .video{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+         }
+         .video video{
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+           
+         } 
+         .video-content{
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+         }
+         .testimonial-div{
+             height: 700px;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+         }
+         .testimonial-container{
+            width: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+         }
+         .testimonial{
+            display: flex;
+            width: 85%;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+         
+         .testimonial-content{
+           
+            border: 2px solid #F2F2F2;
+            border-radius: 10px;
+            height: 370px;
+            display: flex;
+            margin-left: 5px;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 5px;
+            
+            
+            }
+            .testimonial-content p{
+                padding: 16px;
+                line-height: 1.4;
+            margin:0 2px;
+            height: 70%;
+            font-size: 15px;
+            }
+         .testimonial-content span{
+            display: block;
+            font-size: 25px;
+         }
+         .video-written-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 47%;
+        }
+        .video-written-content span{
+            display: block;
+        }
+        .video-written-content h1{
+            font-size: 55px;
+        }
+
+        .video-written-content p{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .video-bottle img{
+            height: 350px;
+            width: auto;
+        }
+        .video-button{
+
+            height: 50px;
+        width: 140px;
+        position: relative;
+        bottom: 20px;
+        background-color: deeppink;
+       
+        font-weight: 500;
+        border: 2px solid white;
+        } 
+        .slick-prev:before{
+            font-size: 40px;
+        
+        }
+        .slick-next:before{
+            font-size: 40px;
+        }
+        .slick-dots li button:before {
+
+            font-size: 15px;
+
+        }
+        .slick-dots li.slick-active button:before{
+            color: #fff;
+        }
+        .testimonial-img{
+            background-color: black;
+            position: relative;
+            bottom: 0;
+            height: 30%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+
+        }
+
+        .testimonial-img img{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            position: relative;
+            bottom: 20px;
+
+        }
+        .testimonial-img span{
+            font-size: 20px;
+        }
+
+         .whyAlkalineImg{
+            height: 400px;
+            width: auto;
+         }
+            
+        .phScale{
+            height: 200px;
+            width: auto;
+        }
+        .logo-section{
+           display: flex;
+           gap: 50px;
+           flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer{
+            color: black !important;
+            background-color: #eeeceb;
+        }
+        .footer p{
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+      <!-- hero section start -->
+<div class="hero-section-container">
+
+    <div class="hero-section">
+        
+
+        <nav class="navbar">
+          <div class="nav-container">
+            <div class="logo">
+                <img src="./logo.png"/>
+            </div>
+    
+            <ul class="nav-links">
+                <li><a href="#aquaplusWay">AQUAPLUS WAY</a></li>
+                <li> <a href="#whyAlkaline">WHY ALKALINE</a> </li>
+                <li> <a href="#products">PRODUCTS </a></li>
+                <li> <a href="#orderNow">Order Now</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="contactUs">CONTACT US</a></li>
+            </ul>
+            <div class="right-nav">
+                <div class="cart">
+                    <a href="#cart"><svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.4477 19.0669H16.3431C16.7043 19.0669 17.0507 19.2104 17.3061 19.4658C17.5615 19.7213 17.705 20.0677 17.705 20.4289C17.705 20.7901 17.5615 21.1365 17.3061 21.3919C17.0507 21.6473 16.7043 21.7908 16.3431 21.7908H4.08577C3.72457 21.7908 3.37816 21.6473 3.12275 21.3919C2.86734 21.1365 2.72385 20.7901 2.72385 20.4289V2.72385H1.36192C1.00072 2.72385 0.654309 2.58036 0.398899 2.32495C0.143488 2.06954 0 1.72313 0 1.36192C0 1.00072 0.143488 0.654309 0.398899 0.398898C0.654309 0.143488 1.00072 0 1.36192 0H4.08577C4.44698 0 4.79339 0.143488 5.0488 0.398898C5.30421 0.654309 5.4477 1.00072 5.4477 1.36192V4.08714L5.54712 4.08577H18.9675C20.5269 4.08577 21.7908 5.3047 21.7908 6.80962C21.7908 7.00846 21.7676 7.20594 21.7227 7.4007L20.1551 14.2103C19.8691 15.4565 18.7224 16.3431 17.3986 16.3431H5.54712L5.4477 16.3417V19.0669ZM4.76674 27.2385C4.22493 27.2385 3.70531 27.0233 3.3222 26.6401C2.93908 26.257 2.72385 25.7374 2.72385 25.1956C2.72385 24.6538 2.93908 24.1342 3.3222 23.7511C3.70531 23.368 4.22493 23.1527 4.76674 23.1527C5.30854 23.1527 5.82816 23.368 6.21128 23.7511C6.59439 24.1342 6.80962 24.6538 6.80962 25.1956C6.80962 25.7374 6.59439 26.257 6.21128 26.6401C5.82816 27.0233 5.30854 27.2385 4.76674 27.2385ZM17.0241 27.2385C16.4823 27.2385 15.9626 27.0233 15.5795 26.6401C15.1964 26.257 14.9812 25.7374 14.9812 25.1956C14.9812 24.6538 15.1964 24.1342 15.5795 23.7511C15.9626 23.368 16.4823 23.1527 17.0241 23.1527C17.5659 23.1527 18.0855 23.368 18.4686 23.7511C18.8517 24.1342 19.0669 24.6538 19.0669 25.1956C19.0669 25.7374 18.8517 26.257 18.4686 26.6401C18.0855 27.0233 17.5659 27.2385 17.0241 27.2385ZM5.4477 6.80962V13.6192H17.4749L19.0669 6.80962H5.4477Z" fill="#FDFDFD"/>
+                        </svg>
+                        </a>
+                </div>
+                <div class="profile">
+                    <a href="#profile"> <svg width="21" height="28" viewBox="0 0 21 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 27.2385C0 24.4865 1.09324 21.8471 3.03923 19.9012C4.98521 17.9552 7.62453 16.8619 10.3766 16.8619C13.1286 16.8619 15.7679 17.9552 17.7139 19.9012C19.6599 21.8471 20.7531 24.4865 20.7531 27.2385H18.159C18.159 25.1745 17.3391 23.195 15.8796 21.7355C14.4201 20.276 12.4406 19.4561 10.3766 19.4561C8.31254 19.4561 6.33305 20.276 4.87356 21.7355C3.41407 23.195 2.59414 25.1745 2.59414 27.2385H0ZM10.3766 15.5649C6.07678 15.5649 2.59414 12.0822 2.59414 7.78243C2.59414 3.48264 6.07678 0 10.3766 0C14.6764 0 18.159 3.48264 18.159 7.78243C18.159 12.0822 14.6764 15.5649 10.3766 15.5649ZM10.3766 12.9707C13.2431 12.9707 15.5649 10.649 15.5649 7.78243C15.5649 4.9159 13.2431 2.59414 10.3766 2.59414C7.51004 2.59414 5.18828 4.9159 5.18828 7.78243C5.18828 10.649 7.51004 12.9707 10.3766 12.9707Z" fill="#FDFDFD"/>
+                        </svg>
+                        </a>
+                </div>
+            </div>
+    
+            
+          </div>
+    
+            
+    
+        </nav>  
+        <div class="main-container">
+            <div class="first-div">
+                <div class="iam">
+                  <h1>   I AM</h1>
+                </div>
+                <div class="rating">
+                    <div class="content">
+                        EXPLORE OUR HAPPY
+                        CUSTOMERS REVIEWS
+                    </div>
+                    <div class="rate">
+                        <div class="star">4.8/5</div>
+                        <div class="photos">
+                            <image src="customer1.png" class="customer" />
+                            <image src="customer2.jpg" class="customer" />
+                            <image src="customer3.jpg" class="customer" />
+                            <button >...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second-div">
+                <img src="./aqua-bottle.png" alt="loading...."/>
+            </div>
+            <div class="third-div">
+                <div class="bpa-para">
+                    <div class="bpa"> <h1>BPA FREE</h1></div>
+                    <div class="bpa-first">
+                        For the first time in the UAE, Aquaplus provides alkaline water in non toxic 5 gallon bottles that ensure no harmful chemicals can leak into the water.
+
+                    </div>
+                </div>
+                <div class="order">
+                    <button class="order-btn">ORDER NOW
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+     <!-- hero section end -->
+
+     <!-- about section start -->
+      <div class="about">
+        <div class="about-container">
+
+            <div class="about-content">
+                <h1>AQUAPLUS WAY</h1>
+                <div class="para">
+    
+                    <div class="para1">
+                        Aquaplus is the first bottled water company in the UAE that is packaged in  5-gallon Bisphenol A (BPA) Free Bottles. Bisphenol A (BPA) is an industrial chemical that is used in making certain plastic products, and research has shown that this substance can seep into food and beverages stored in containers that are made with BPA, which can cause serious health issues in the long run.
+        
+        
+        
+                    </div>
+                    <div class="para2">
+                        Also, Aquaplus water undergoes a unique filtration process which gives it rejuvenating alkaline and ultra-hydrating properties. This entire process mimics the way water is processed in nature. Aquaplus water clusters are reduced in size, enabling them to hydrate your body more efficiently. 
+        
+                    </div>
+                    <div class="para3">
+                    
+                        Aquaplus water makes minerals and nutrients much easier for your body to absorb, leaving you feeling rejuvenated and doubly refreshed. It ensures you better hydration, improved detoxification, and increased metabolism. The world is just beginning to understand the merits of an alkaline lifestyle.       
+                    </div>
+                </div>
+            </div> 
+            <div class="tilte-bottle">
+                <img src="aqua-bottle.png" alt="loading"/>
+            </div>
+          </div>
+          <div class="banner">
+            <div class="banner-images">
+                <img src="banner-img1.png" alt="loadding" />
+                <img  src="banner-img2.png" alt="loading"/>
+                <img src="banner-img3.png"  alt="loading" />
+                <img src="banner-img4.png" alt="loading" />
+                <img src="banner-img5.png" alt="loading" />
+            </div>
+          </div>
+        </div>
+       <!-- about section end -->
+          <!-- why Alkaline section start -->
+       <div class="whyAlkalineSection row w-100 p-5">
+        <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+            <img class="whyAlkalineImg" src="aqua-bottle.png" alt="Loading" />
+            <img class="phScale pt-3" src="alkalinepng.png" alt="Loading" />
+        </div>
+        <div class="col-8 p-3">
+         <h2>WHY ALKALINE</h2>
+         <h4>Why should we be concerned about pH levels?</h4>
+         <p>Since most of the body is water-based (50-60%), the pH level has profound effects on all aspects of our body . Having a balanced pH level, helps our body support proper physiological functioning.  Some of the top benefits of having a balanced pH are : </p>
+         <p> <strong>Cellular function: </strong>It helps in proper function of the cells. If our bodies Ph levels (7.35 - 7.45) fall below the natural range, it can impair cellular activities including enzyme function, energy production and oxygen transport. 
+        </p>
+         <p>
+            <strong>Bone Health: </strong>Falling below the range, turns the body's environment acidic, which will lead to cancium being leached from the bones to neutralise the excess acid potentially weakening bones.
+
+         </p>
+         <p> <strong>
+            Digestive health:
+         </strong> Imbalance in the body's pH levels can cause digestive issues which can lead to acid reflux or indigestion. </p>
+         <p>
+             <strong>
+                 Metabolic processes: 
+             </strong>
+             pH levels can impact the body's ability to metabolize nutrients and regulate hormones, influencing energy levels, mood and overall health.
+         </p>
+         <h5>So what is the solution?</h5>
+         <p>Drinking alkaline water from Aquaplus's BPA-free bottles can help in maintaining our bodies pH levels. Alkaline water has powerful antioxidant properties that help with better digestion, neutralises excess stomach acid, better bone health, improved energy and detoxification</p>
+        </div>
+       </div>
+              <!-- why alkaline section end  -->
+       <!-- video section start -->
+        <div class="video-section">
+            <div class="video">
+               <video src="./video.mp4" autoplay muted loop></video>
+            </div>
+            <div class="video-content">
+                <div class="video-written-content">
+                    <h1>FEATURED PRODUCTS</h1>
+                    <p>Aquaplus is the first bottled water in the UAE that is packed in a
+                        <span>
+                        5 gallon Bisphenol A (BPA) Free Bottle.
+                        </span>
+                    </p>
+                </div>
+                <div class="video-bottle">
+                    <img src="aqua-bottle.png" alt="loading"/>
+                </div>
+                <button class="video-button">ORDER NOW </button>
+            </div>
+
+        </div>
+        <!-- video section end  -->
+         <!-- feature section start   -->
+          <div class="feature d-flex flex-column align-items-center justify-content-center p-5 w-100">
+            <h1 class="font7ways">7 WAYS ALKALINE WATER <br>
+                HELPS YOU STAY HEALTHY</h1>
+                <div class="logo-section  p-4">
+                    <div class="logo-div d-flex flex-column align-items-center justify-content-center">
+                        <svg width="214" height="214" viewBox="0 0 214 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_107_832)">
+                            <circle cx="103" cy="103" r="90" fill="#FDFDFD"/>
+                            </g>
+                            <path d="M101.011 58.3691C99.9422 58.3691 99.0762 59.2519 99.0762 60.3416V63.0346C99.0762 64.1232 99.9412 65.007 101.011 65.007C102.08 65.007 102.946 64.1243 102.946 63.0346L102.945 60.3416C102.945 59.2519 102.08 58.3691 101.011 58.3691Z" fill="#DB5CA2"/>
+                            <path d="M90.6272 62.6531C90.0907 61.7079 88.9043 61.3866 87.9842 61.9304C87.058 62.4753 86.7407 63.6814 87.2753 64.6245L88.5963 66.9567C89.1339 67.9049 90.3212 68.22 91.2393 67.6793C92.1655 67.1344 92.4828 65.9283 91.9482 64.9853L90.6272 62.6531Z" fill="#DB5CA2"/>
+                            <path d="M83.3743 72.2757L81.0862 70.9282C80.16 70.3812 78.9777 70.7046 78.4432 71.6498C77.9087 72.5928 78.2259 73.799 79.1522 74.3427L81.4402 75.6903C82.3552 76.232 83.5447 75.919 84.0832 74.9687C84.6167 74.0266 84.2995 72.8205 83.3743 72.2757Z" fill="#DB5CA2"/>
+                            <path d="M120.932 70.9282L118.644 72.2757C117.718 72.8195 117.401 74.0267 117.935 74.9687C118.474 75.918 119.662 76.232 120.578 75.6903L122.866 74.3427C123.793 73.7989 124.11 72.5918 123.575 71.6498C123.039 70.7046 121.852 70.3812 120.932 70.9282Z" fill="#DB5CA2"/>
+                            <path d="M114.038 61.9287C113.112 61.3849 111.93 61.7052 111.395 62.6513L110.074 64.9835C108.786 67.2575 112.149 69.2049 113.426 66.956L114.747 64.6238C115.282 63.6797 114.963 62.4735 114.038 61.9287Z" fill="#DB5CA2"/>
+                            <path d="M143.179 39H58.8223C48.1257 39 39.9068 48.5088 41.1187 59.2152L51.1022 149.084C52.108 158.273 59.731 165.215 68.824 165.215H133.174C142.248 165.215 149.871 158.274 150.878 149.084L160.881 59.2152C162.097 48.4763 153.845 39 143.177 39H143.179ZM102.95 149.436C102.95 150.525 102.085 151.409 101.015 151.409C99.9457 151.409 99.0797 150.526 99.0797 149.436L99.0807 98.7339C99.0807 97.6452 99.9457 96.7614 101.016 96.7614C102.085 96.7614 102.951 97.6442 102.951 98.7339L102.95 149.436ZM125.766 84.9297H108.546C108.546 81.8135 106.727 79.1123 104.097 77.9288L107.27 68.2454C107.618 67.2202 107.057 66.0962 106.051 65.7406C105.045 65.4047 103.942 65.9579 103.594 66.9831L100.208 77.278C96.4161 77.6918 93.4754 80.9659 93.4754 84.9296H76.2359C72.2893 84.9296 69.4452 81.123 70.3929 77.1989C73.7979 63.1972 86.2 52.8039 101.001 52.8039C115.783 52.8039 128.204 63.1975 131.61 77.1989C132.557 81.124 129.712 84.9296 125.766 84.9296L125.766 84.9297Z" fill="#DB5CA2"/>
+                            <defs>
+                            <filter id="filter0_d_107_832" x="0" y="0" width="214" height="214" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feMorphology radius="7" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_107_832"/>
+                            <feOffset dx="4" dy="4"/>
+                            <feGaussianBlur stdDeviation="5"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_107_832"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_107_832" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg>
+                            
+                        <h6> Weight Loss</h6>
+                    </div>
+                    <div class="logo-div d-flex flex-column align-items-center justify-content-center">
+                        <svg width="214" height="214" viewBox="0 0 214 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_107_825)">
+                            <circle cx="103" cy="103" r="90" fill="#FDFDFD"/>
+                            </g>
+                            <path d="M44.6067 108.379C46.1964 109.773 48.3642 110.558 50.6267 110.558C52.8893 110.558 55.0584 109.773 56.6479 108.379C59.8705 105.453 70.2922 99.1296 74.235 98.0909L74.2362 157.648C74.2036 159.621 75.0743 161.526 76.6603 162.945C78.2451 164.363 80.4141 165.179 82.6936 165.215H85.1912H85.19C87.4697 165.179 89.6386 164.363 91.2245 162.945C92.8105 161.526 93.6824 159.622 93.6499 157.648V133.353C93.5824 131.565 95.1913 130.063 97.2541 129.989H104.748C106.812 130.063 108.421 131.565 108.353 133.353V157.648C108.32 159.621 109.193 161.526 110.778 162.945C112.364 164.363 114.534 165.179 116.812 165.215H119.31C121.588 165.179 123.757 164.363 125.342 162.945C126.928 161.526 127.8 159.622 127.767 157.648V98.0909C131.711 99.1246 142.132 105.448 145.354 108.379C146.944 109.773 149.113 110.558 151.376 110.558C153.638 110.558 155.806 109.773 157.397 108.379L158.576 107.308C160.134 105.865 161 103.963 161 101.987C161 100.011 160.134 98.1094 158.576 96.6658L155.731 94.0863C146.9 86.0735 130.609 73.5412 111.945 69.7046C116.545 66.9863 119.575 62.6869 120.265 57.9013C120.955 53.1146 119.24 48.3021 115.555 44.6868C111.869 41.0705 106.569 39 101.001 39C95.431 39 90.1309 41.0705 86.4459 44.6868C82.7597 48.3021 81.0447 53.1146 81.735 57.9013C82.4262 62.6869 85.456 66.9863 90.0551 69.7046C71.3903 73.5409 55.1073 86.0735 46.2686 94.0882L43.4242 96.6656C41.8671 98.1092 41 100.011 41 101.986C41 103.963 41.8671 105.864 43.4242 107.308L44.6067 108.379ZM101.002 85.3383C103.713 85.3456 106.392 85.8463 108.865 86.8091L107.797 83.9209C107.556 83.3817 107.582 82.7809 107.869 82.2583C108.156 81.7367 108.678 81.3393 109.314 81.162C109.949 80.9836 110.641 81.041 111.226 81.3185C111.812 81.597 112.239 82.0716 112.408 82.6306L115.388 90.6352C115.798 91.7409 115.097 92.9248 113.82 93.2794L104.584 95.8589C104.344 95.9277 104.092 95.9622 103.838 95.9622C102.644 95.9632 101.625 95.2091 101.439 94.1869C101.254 93.1636 101.956 92.1759 103.094 91.8587L107.134 90.7301C103.298 89.1875 98.8767 89.1655 95.0206 90.6696C91.1633 92.1748 88.2539 95.0579 87.046 98.5688C85.8394 102.081 86.4535 105.873 88.732 108.96C91.0093 112.047 94.7246 114.124 98.9105 114.651C103.096 115.176 107.339 114.1 110.536 111.701C113.734 109.303 115.568 105.818 115.563 102.155C115.563 100.994 116.649 100.052 117.99 100.052C119.33 100.052 120.417 100.994 120.417 102.155C120.417 106.614 118.371 110.891 114.731 114.045C111.09 117.199 106.151 118.971 101.003 118.971C95.8532 118.971 90.9144 117.199 87.2741 114.045C83.6326 110.891 81.5877 106.614 81.5877 102.155C81.5877 97.6945 83.6326 93.4168 87.2741 90.2638C90.9147 87.1097 95.8532 85.3385 101.003 85.3385L101.002 85.3383Z" fill="#DB5CA2"/>
+                            <defs>
+                            <filter id="filter0_d_107_825" x="0" y="0" width="214" height="214" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feMorphology radius="7" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_107_825"/>
+                            <feOffset dx="4" dy="4"/>
+                            <feGaussianBlur stdDeviation="5"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_107_825"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_107_825" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg>
+                            
+                            
+                        <h6> Detoxification</h6>
+                    </div>
+                    <div class="logo-div d-flex flex-column align-items-center justify-content-center">
+                        <svg width="214" height="214" viewBox="0 0 214 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_107_842)">
+                            <circle cx="103" cy="103" r="90" fill="#FDFDFD"/>
+                            </g>
+                            <path d="M106.463 52.6326C106.463 56.2754 104.017 59.23 101.001 59.23C97.984 59.23 95.5391 56.2753 95.5391 52.6326C95.5391 48.9884 97.9841 46.0352 101.001 46.0352C104.017 46.0352 106.463 48.9885 106.463 52.6326Z" fill="#DB5CA2"/>
+                            <path d="M41.0001 114.187V120.124C41.0001 120.178 41.0181 120.225 41.026 120.276C41.0305 120.31 41.0215 120.344 41.0294 120.378C43.4305 131.115 51.532 138.612 60.7311 138.612C69.928 138.612 78.0306 131.113 80.4317 120.378C80.4396 120.344 80.4306 120.31 80.4351 120.276C80.4418 120.225 80.4599 120.178 80.4599 120.124V114.187C80.4599 113.649 80.0996 113.212 79.6527 113.212L75.6047 113.214L61.536 90.1089V69.6448C61.653 69.6516 61.7633 69.6869 61.8815 69.6869C65.478 69.6869 68.4387 66.3325 68.7246 61.9961C71.934 60.6881 75.231 59.6084 78.5361 58.7858C82.2251 57.8503 86.1569 57.1541 90.2263 56.6986C90.9613 59.5363 92.4518 61.9677 94.4037 63.674C91.6593 102.198 87.456 130.752 81.904 148.571C78.3952 150.546 75.3716 153.734 73.2847 157.844H68.8416C65.9226 157.844 63.5463 160.713 63.5463 164.241V165.215H138.455V164.241C138.455 160.713 136.08 157.844 133.16 157.844H128.717C126.63 153.734 123.606 150.548 120.098 148.571C114.546 130.751 110.342 102.194 107.598 63.674C109.549 61.9676 111.04 59.5362 111.775 56.6986C115.841 57.1527 119.774 57.8489 123.467 58.7871C126.764 59.6084 130.058 60.6853 133.264 61.992C133.522 66.2875 136.498 69.6867 140.119 69.6867C140.237 69.6867 140.347 69.6513 140.463 69.6445V90.1086L126.463 113.212L122.35 113.213C121.904 113.213 121.543 113.65 121.543 114.188V120.125C121.543 120.179 121.561 120.226 121.567 120.277C121.572 120.311 121.563 120.345 121.571 120.379C123.972 131.116 132.073 138.614 141.27 138.614C150.469 138.614 158.571 131.115 160.972 120.379C160.98 120.345 160.971 120.311 160.975 120.277C160.982 120.226 161 120.179 161 120.125V114.188C161 113.65 160.64 113.213 160.193 113.213H156.146L142.076 90.1086L142.078 69.3019C144.912 68.2753 146.995 65.1342 146.995 61.3828C146.995 56.8047 143.911 53.079 140.121 53.079C138.575 53.079 137.088 53.7126 135.872 54.878C132.706 52.788 129.197 51.026 125.441 49.6388C120.939 47.9527 116.042 46.7602 110.89 46.0694C108.965 41.861 105.255 39 101.001 39C96.7459 39 93.0356 41.8609 91.1132 46.0705C85.9554 46.7599 81.0596 47.9537 76.5661 49.6385C72.8051 51.0268 69.2974 52.789 66.1309 54.879C64.9163 53.7151 63.4293 53.0801 61.8826 53.0801C58.0925 53.0801 55.0082 56.8043 55.0082 61.3838C55.0082 65.1353 57.0919 68.2765 59.9251 69.303V90.1096L45.9237 113.213H41.8071C41.3602 113.213 41 113.648 41 114.187L41.0001 114.187ZM126.992 119.15H123.158V115.162H125.285L124.424 116.583C124.161 117.018 124.238 117.627 124.599 117.944C124.742 118.072 124.909 118.133 125.075 118.133C125.322 118.133 125.568 117.996 125.725 117.735L126.992 115.645L126.992 119.15ZM155.713 115.784L156.903 117.736C157.166 118.171 157.675 118.258 158.029 117.944C158.388 117.626 158.466 117.016 158.201 116.582L157.336 115.162H159.389V119.15H155.713L155.713 115.784ZM154.328 113.511C154.187 113.687 154.1 113.925 154.1 114.189V119.152H128.605V114.189C128.605 113.892 128.49 113.637 128.318 113.458L141.275 92.0764L154.328 113.511ZM85.9439 149.048C94.0826 119.555 97.5801 70.7516 97.5801 70.7516L98.7329 129.033L85.9439 149.048ZM101.001 40.9478C106.336 40.9478 110.675 46.1897 110.675 52.6333C110.675 59.0772 106.336 64.3188 101.001 64.3188C95.6667 64.3188 91.327 59.0769 91.327 52.6333C91.3259 46.1894 95.6667 40.9478 101.001 40.9478ZM75.1675 115.781L76.3574 117.735C76.515 117.995 76.7592 118.132 77.0069 118.132C77.1735 118.132 77.3412 118.071 77.4842 117.943C77.8433 117.625 77.9209 117.014 77.6553 116.581L76.7908 115.161H78.844V119.149H75.1675L75.1675 115.781ZM60.7305 92.0727L73.7828 113.509C73.6421 113.684 73.5532 113.922 73.5532 114.186V119.149L48.0597 119.148V114.185C48.0597 113.888 47.9449 113.633 47.7726 113.455L60.7305 92.0727ZM42.6125 115.16H44.7401L43.8789 116.581C43.6155 117.014 43.6932 117.625 44.0534 117.942C44.4114 118.263 44.9179 118.169 45.1802 117.731L46.4466 115.641V119.146L42.6124 119.148L42.6125 115.16Z" fill="#DB5CA2"/>
+                            <defs>
+                            <filter id="filter0_d_107_842" x="0" y="0" width="214" height="214" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feMorphology radius="7" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_107_842"/>
+                            <feOffset dx="4" dy="4"/>
+                            <feGaussianBlur stdDeviation="5"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_107_842"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_107_842" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg>
+                            
+                            
+                        <h6> Ph balance</h6>
+                    </div>
+                    <div class="logo-div d-flex flex-column align-items-center justify-content-center">
+                        <svg width="214" height="214" viewBox="0 0 214 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_107_815)">
+                            <circle cx="103" cy="103" r="90" fill="#FDFDFD"/>
+                            </g>
+                            <path d="M58.3244 110.676C52.2699 110.535 46.6045 113.813 43.4617 119.273C40.318 124.733 40.1764 131.549 43.0881 137.151C45.9997 142.752 51.5237 146.289 57.5782 146.43C58.4235 146.496 59.0956 147.205 59.1588 148.097C59.3799 153.591 61.9857 158.672 66.2241 161.873C70.4615 165.075 75.8615 166.04 80.8624 164.492C85.8647 162.943 89.9124 159.054 91.8382 153.944C93.7641 148.834 93.3546 143.074 90.726 138.325C90.36 137.631 90.4679 136.767 90.9897 136.195L133.489 91.3634C134.031 90.813 134.85 90.6992 135.508 91.0853C140.011 93.8581 145.47 94.2903 150.314 92.2586C155.159 90.227 158.846 85.9569 160.314 80.6804C161.782 75.4048 160.867 69.7088 157.832 65.2389C154.797 60.7679 149.98 58.0192 144.772 57.7859C143.927 57.7193 143.255 57.0103 143.191 56.1186C142.97 50.6247 140.364 45.5435 136.126 42.3421C131.889 39.1406 126.489 38.1755 121.488 39.7233C116.485 41.2723 112.438 45.1619 110.512 50.2719C108.586 55.3819 108.996 61.1423 111.624 65.8904C111.99 66.5845 111.883 67.4498 111.36 68.0209L68.8613 112.852C68.32 113.404 67.4997 113.516 66.8417 113.13C64.2677 111.509 61.3222 110.661 58.3244 110.676Z" fill="#DB5CA2"/>
+                            <defs>
+                            <filter id="filter0_d_107_815" x="0" y="0" width="214" height="214" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feMorphology radius="7" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_107_815"/>
+                            <feOffset dx="4" dy="4"/>
+                            <feGaussianBlur stdDeviation="5"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_107_815"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_107_815" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg>
+                            
+                            
+                        <h6>Bone Health</h6>
+                    </div>
+                    <div class="logo-div d-flex flex-column align-items-center justify-content-center">
+                        <svg width="214" height="214" viewBox="0 0 214 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_107_807)">
+                            <circle cx="103" cy="103" r="90" fill="#FDFDFD"/>
+                            </g>
+                            <path d="M83.9503 40.6869C85.4623 43.4123 120.999 107.63 120.999 127.352C120.999 148.232 103.053 165.215 80.9994 165.215C58.943 165.215 41 148.229 41 127.352C41 107.631 76.5367 43.4113 78.0485 40.6869C78.6249 39.6495 79.7608 39 81.0001 39C82.2381 39 83.374 39.6495 83.9516 40.6856L83.9503 40.6869ZM142.214 40.5707C141.617 39.5982 140.521 39.0012 139.333 39.0012C138.144 39.0012 137.048 39.5994 136.451 40.5707C134.528 43.701 117.665 71.4554 117.665 81.6C117.665 92.9089 127.386 102.11 139.333 102.11C151.28 102.11 161 92.9089 161 81.6C161 71.4567 144.137 43.7022 142.214 40.5707Z" fill="#DB5CA2"/>
+                            <defs>
+                            <filter id="filter0_d_107_807" x="0" y="0" width="214" height="214" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feMorphology radius="7" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_107_807"/>
+                            <feOffset dx="4" dy="4"/>
+                            <feGaussianBlur stdDeviation="5"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_107_807"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_107_807" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg>
+                            
+                            
+                        <h6> Hydration</h6>
+                    </div>
+                    <div class="logo-div d-flex flex-column align-items-center justify-content-center">
+                        <svg width="214" height="214" viewBox="0 0 214 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_107_820)">
+                            <circle cx="103" cy="103" r="90" fill="#FDFDFD"/>
+                            </g>
+                            <path d="M125.609 39.1024C116.417 39.0916 107.582 43.126 100.987 50.3466C94.3125 42.9871 85.3247 38.9098 75.9903 39.0015C66.656 39.0951 57.7352 43.3527 51.1776 50.8435C44.6199 58.3344 40.9603 68.4481 41.0003 78.9724C41.0003 120.202 96.8978 162.859 99.3667 164.652C99.8457 165.014 100.408 165.21 100.986 165.215C101.572 165.217 102.145 165.021 102.632 164.652C105.014 162.861 160.998 120.204 160.998 78.9724H161C161.016 68.3868 157.291 58.2298 150.649 50.7481C144.008 43.2664 134.996 39.0753 125.607 39.102L125.609 39.1024ZM146.204 82.2238V82.222C144.578 82.222 143.261 80.7386 143.261 78.9059C143.261 73.6277 141.402 68.565 138.091 64.8334C134.781 61.1015 130.291 59.0044 125.61 59.0044C123.986 59.0044 122.669 57.5191 122.669 55.6865C122.669 53.8556 123.986 52.3704 125.61 52.3704C131.853 52.3704 137.839 55.1662 142.252 60.142C146.666 65.1178 149.145 71.8688 149.145 78.9062C149.179 80.7262 147.906 82.2349 146.292 82.2888L146.204 82.2238Z" fill="#DB5CA2"/>
+                            <defs>
+                            <filter id="filter0_d_107_820" x="0" y="0" width="214" height="214" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feMorphology radius="7" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_107_820"/>
+                            <feOffset dx="4" dy="4"/>
+                            <feGaussianBlur stdDeviation="5"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_107_820"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_107_820" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg>
+                            
+                            
+                        <h6> Heart Health</h6>
+                    </div>
+                    <div class="logo-div d-flex flex-column align-items-center justify-content-center">
+                        <svg width="214" height="214" viewBox="0 0 214 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_107_800)">
+                            <circle cx="103" cy="103" r="90" fill="#FDFDFD"/>
+                            </g>
+                            <mask id="mask0_107_800" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="41" y="39" width="120" height="127">
+                            <path d="M41 39H161V165.215H41V39Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#mask0_107_800)">
+                            <path d="M103.701 64.4595C103.97 64.8803 104.056 65.3931 103.938 65.8794C103.828 66.3677 103.521 66.7885 103.09 67.043L95.7146 71.4213C94.7105 72.0202 93.5108 72.2013 92.3746 71.9253C91.2385 71.6484 90.256 70.936 89.6404 69.9417L89.3645 69.5278C89.1316 69.1539 89.0631 68.7018 89.1746 68.2761C89.2872 67.8504 89.569 67.4903 89.9555 67.2799L97.1736 63.3362V63.3352C98.0837 62.8263 98.9478 62.2392 99.757 61.5796C100.107 61.3046 100.558 61.1901 100.998 61.2645C101.438 61.3398 101.825 61.5982 102.064 61.9749L103.701 64.4595ZM152.53 114.609C146.345 108.141 137.564 104.82 128.647 105.576C124.137 106.045 119.769 107.428 115.809 109.64C114.741 110.203 113.641 110.703 112.516 111.138L97.8234 119.855C97.5034 120.053 97.1344 120.156 96.7586 120.151C95.7927 120.17 94.9375 119.531 94.682 118.601C94.4257 117.67 94.8347 116.684 95.6734 116.207L100.407 113.387C97.3556 113.342 94.3318 112.801 91.4538 111.789C86.37 109.963 80.8292 109.852 75.6767 111.473C74.9878 111.669 74.247 111.507 73.7048 111.04C73.1421 110.551 72.8867 109.797 73.0335 109.067L81.2371 68.0667L81.238 68.0677C81.3516 67.4492 81.7352 66.9149 82.2832 66.6076L93.583 60.3368C95.3513 59.4071 96.7448 57.8952 97.5277 56.0574C98.519 53.6256 98.2763 50.864 96.8769 48.6424L92.3999 41.5426C91.6571 40.3595 90.474 39.5218 89.1118 39.2145C87.7495 38.9072 86.3207 39.1558 85.1425 39.9054L71.3375 48.7804C70.7875 49.1161 70.3687 49.6308 70.1543 50.2395L41.933 124.274C40.8262 127.203 40.7352 130.418 41.6767 133.405C42.6171 136.392 44.5341 138.975 47.1198 140.741L67.0979 154.408L67.2955 154.565L71.0035 157.11H71.0025C76.9807 160.387 84.0337 161.098 90.5463 159.082C94.0761 157.965 97.7498 157.374 101.452 157.326L94.0563 152.79C93.0591 152.186 92.7421 150.888 93.3459 149.892C93.9506 148.894 95.2483 148.577 96.2454 149.181L113.6 159.85V159.851C114.42 160.193 115.216 160.589 115.986 161.034C124.362 165.892 134.573 166.387 143.38 162.361C152.187 158.335 158.494 150.289 160.3 140.777C162.107 131.264 159.189 121.465 152.47 114.492L152.53 114.609ZM76.7998 55.2277L82.4591 52.2107C83.4729 51.6705 84.7314 52.0492 85.2795 53.0591L87.8433 57.6146C88.3933 58.6294 88.0341 59.8977 87.035 60.4741C86.7248 60.6581 86.3695 60.754 86.0094 60.7501C85.2441 60.755 84.5395 60.3381 84.1755 59.6658L82.6175 56.905L78.7715 58.8769C77.7479 59.421 76.4757 59.0325 75.9316 58.0089C75.3865 56.9853 75.775 55.7131 76.7996 55.169L76.7998 55.2277ZM68.7147 113.524L66.7428 114.274L66.7418 114.275C66.5011 114.36 66.2476 114.407 65.9922 114.413C65.1125 114.424 64.3218 113.878 64.0204 113.052C63.8148 112.532 63.8266 111.951 64.0527 111.44C64.2787 110.928 64.7005 110.529 65.2231 110.33L67.1949 109.58C67.7214 109.368 68.3105 109.377 68.8302 109.604C69.3508 109.831 69.7569 110.258 69.9585 110.788C70.1601 111.318 70.1395 111.908 69.9017 112.422C69.6639 112.937 69.2285 113.334 68.6942 113.525L68.7147 113.524ZM139.532 131.017L139.531 131.018C138.971 131.013 138.43 131.233 138.034 131.63C137.637 132.027 137.416 132.567 137.421 133.127V146.065H125.984V133.127C125.988 132.567 125.768 132.027 125.371 131.63C124.974 131.233 124.434 131.013 123.873 131.018H122.552L131.722 121.157L140.853 131.018L139.532 131.017Z" fill="#DB5CA2"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_107_800" x="0" y="0" width="214" height="214" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feMorphology radius="7" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_107_800"/>
+                            <feOffset dx="4" dy="4"/>
+                            <feGaussianBlur stdDeviation="5"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_107_800"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_107_800" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg>
+                            
+                            
+                        <h6>Energy/Endurance</h6>
+                    </div>
+                  
+                </div>
+          </div>
+          <!-- feature section end  -->
+
+         <!-- testimonial start -->
+         <div class="testimonial-div">
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>
+
+                            <span>“</span>
+                                
+                            Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo sed aenean amet lacus.Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo.
+                        </p>
+                      <div class="testimonial-img">
+                        <img src="client1.png" alt="loading" />
+                        <span>SUZANA</span>
+                      </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>
+
+                            <span>“</span>
+                                
+                            Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo sed aenean amet lacus.Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo.
+                        </p>
+                      <div class="testimonial-img">
+                        <img src="customer3.jpg" alt="loading" />
+                        <span>LÍVIA</span>
+                      </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>
+
+                            <span>“</span>
+                                
+                            Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo sed aenean amet lacus.Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo.
+                        </p>
+                      <div class="testimonial-img">
+                        <img src="client1.png" alt="loading" />
+                        <span>KÁTIA</span>
+                      </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>
+
+                            <span>“</span>
+                                
+                            Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo sed aenean amet lacus.Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo.
+                        </p>
+                      <div class="testimonial-img">
+                        <img src="customer1.png" alt="loading" />
+                        <span>MATHEUS</span>
+                      </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>
+
+                            <span>“</span>
+                                
+                            Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo sed aenean amet lacus.Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo.
+                        </p>
+                      <div class="testimonial-img">
+                        <img src="customer2.jpg" alt="loading" />
+                        <span>MATHEUS</span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <!-- testimonial end -->
+
+         <!-- footer section start -->
+          <!-- <div class="footer d-flex flex-column align-items-center justify-content-center ">
+            <div class="footer-divs">
+                <div class="footer-div d-flex align-items-center justify-content-center flex-column">
+                    <h4>Quick Contacts</h4>
+                    <p>Salsabeel Purification and Distributing
+                        Drinking Water LLC WH # 6, Street 19A,
+                        Community 365 Al Quoz Industrial Area # 2
+                        PO Box 27170,Dubai (UAE)</p>
+                        <p>+971 4 3388383 , 800 WATER (800 92837)</p>
+                        <p>admin@myaquaplus.com</p>
+                </div> 
+                <div class="footer-div d-flex align-items-center justify-content-center flex-column">
+                
+                </div>
+                <div class="footer-div d-flex align-items-center justify-content-center flex-column">
+
+                </div>
+                <div class="footer-div d-flex align-items-center justify-content-center flex-column">
+
+                </div>
+                <div class="footer-div d-flex align-items-center justify-content-center flex-column">
+                  
+                </div>
+            </div>
+            <p>@2024. Aqua Plus. Salsabeel Purification and Distributing Drinking Water LLC. All Rights Reserved. </p>
+          </div> -->
+             <!-- footer section end  -->
+         <!-- cdn of javascript -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        
+				
+				           
+         <script>
+            $('.testimonial').slick({
+                dots: true,
+                
+                infinite: true,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 2,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        </script>
+        
+    
+</body>
+</html>
